@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>Weather Forecast App</h1>
+        <select id="languageSelect">
+            <option value="en">English</option>
+            <option value="es">Español</option>
+            <option value="fr">Français</option>
+        </select>
+        <input type="text" id="searchBar" placeholder="Enter city name...">
+        <button id="searchBtn">Search</button>
+        <button id="geoLocationBtn">Use My Location</button>
+        <button id="saveCityBtn">Save City</button>
+        <select id="unitSelect">
+            <option value="metric">Celsius</option>
+            <option value="imperial">Fahrenheit</option>
+        </select>
+    </header>
+    <main>
+        <div id="currentWeather"></div>
+        <div id="weather"></div>
+        <div id="forecast" class="horizontal-forecast"></div>
+        <div id="savedCities">
+            <h2>Saved Cities</h2>
+            <ul id="cityList"></ul>
+        </div>
+    </main>
+    <footer>
+        <p>
+            <li><a href="http://www.icuzambia.net">ICU Zambia</a></li>
+            <li><a href="https://www.zrdc.org">ZRDC</a></li>
+            <td align="middle">Lilanda Site 5&copy; ALL rights reserved. Designed and maintained by; PRINCE MWANZA 2401869232 <span class="copyright">
+            </p>
+        </td>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

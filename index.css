@@ -1,0 +1,123 @@
+
+/* index.css */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #6dd5fa, #2980b9);
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    transition: background-image 0.5s ease-in-out;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+input, select, button, label {
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #3498db;
+    color: rgb(5, 1, 1);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#weatherResult {
+    margin-top: 20px;
+}
+
+.weather-widget {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.weather-widget img {
+    width: 50px;
+    height: 50px;
+}
+
+.weather-details {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.horizontal-forecast {
+    display: flex;
+    overflow-x: auto;
+    justify-content: space-between;
+}
+
+.forecast-day {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    min-width: 120px;
+    flex-shrink: 0;
+}
+
+footer {
+    background-color: #6a9ad827;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+#savedCities {
+    margin-top: 20px;
+    text-align: left;
+}
+
+#unitToggle {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Background images for weather conditions */
+body.sunny {
+    background-image: url('images/sunny.jpeg');
+}
+
+body.cloudy {
+    background-image: url('images/scattered-clouds.jpeg');
+}
+
+body.rainy {
+    background-image: url('images/light-rain.jpeg');
+}
+
+body.snowy {
+    background-image: url('images/snow.jpeg');
+}
+
+body.default {
+    background-image: url('images/mist.jpeg');
+}
